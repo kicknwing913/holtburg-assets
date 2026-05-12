@@ -1,15 +1,20 @@
 # holtburg-assets
 
-Public character assets for [Holtburg Hollow](https://github.com/kicknwing913/holtburg-hollow), a browser MMO project.
+Public asset CDN for [Holtburg Hollow](https://github.com/kicknwing913/holtburg-hollow) / Caelvars Crest: The Hollow Path, a browser MMO project.
 
-## Contents
+Served via GitHub Pages: https://kicknwing913.github.io/holtburg-assets/
 
-- character/ — 16 GLB files (1 body + 15 Mixamo animations)
+## Structure
 
-## Source
+- `character/` — player character body + Mixamo animation GLBs (1 body + 15 anims)
+- `buildings/` — Quaternius/Kenney architecture GLBs
+- `npcs/` — NPC character body GLBs
+- `mobs/` — hostile creature GLBs
+- `props/` — decorative environment GLBs
+- `audio/` — music, SFX, ambience (deferred)
+- `test/` — pipeline verification assets
 
-Generated from Mixamo (Paladin J Nordstrom). Subject to Mixamo free-use terms.
+## Source & licensing
 
-## Hosting
-
-Served via GitHub Pages at https://kicknwing913.github.io/holtburg-assets/character/
+- `character/` — generated from Mixamo (Paladin J Nordstrom), subject to Mixamo free-use terms. Build pipeline: `convert.py` (local-only, gitignored) batch-converts the FBX sources in `raw/` (also gitignored) to GLB via Blender.
+- Everything else — CC0 or otherwise licensed for use in Caelvars Crest.
